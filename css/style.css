@@ -1,0 +1,269 @@
+/* import des fonts à partir de google api */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Dancing+Script&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none; /*degage tous les styles par défaut des puces*/
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* *************************** NAVBAR ************************** */
+nav {
+    overflow: hidden;
+    background-color: #FFFAE1;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+}
+
+nav a:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+header li {
+    float: right;
+    font-size: 1.2em;
+}
+
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+}
+
+#logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    float: left;
+}
+
+/* *************************** IMAGE PRINCIPALE ************************** */
+#imagePrincipale {
+    padding-top: 60px;
+    background: url(../images/pelissanne_village.jpeg) no-repeat fixed 50% 50%; 
+    background-size: cover; /*prend toute la largeur de la page*/
+    height: 799px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 6em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+}
+
+#premierTrait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #FFFAE1;
+    box-shadow: 1px 3px 2px black;
+}
+
+h3 {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+}
+
+/* *************************** PRESENTATION ************************** */
+#presentation{
+    background-color: #FFFAE1;
+    padding: 10px 0px 100px 0px;
+}
+
+#texteIntro {
+    padding: 0px 20%;
+    text-align: justify;
+}
+
+#prestations { /*espacement des images alignés sur un axe horizontal*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+.imagePrestations h4 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300; /*police 300 équivalent d'un bold */
+}
+
+.imagePrestations img {
+    border-radius: 10px; /*arrondi le bord de l'image*/
+    box-shadow: 5px 6px 9px 2px #000000; /*récupéré sur un générateur css*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagePrestations img:hover { /*ça correspond au mouseover*/
+    opacity: 0.5; /*effet d'opacité*/
+    transform: scale(1.05);/*effet de zoom léger*/
+    transition: 0.6s ease-in-out;/*vitesse de l'effet + option de in + out ou que l'un ou l'autre*/
+}
+
+/* *************************** TOURISME ************************** */
+
+#tourisme {
+    height: 1800px;
+    background-color: #f1f2f6;
+    padding: 1px 2%;
+}
+
+#tourisme h2 {
+    padding-top: 60px;
+}
+
+#lavoir {
+    background: url(../images/lavoir-passadouires-pelissanne.jpeg);
+}
+#moulin {
+    background: url(../images/moulin-jean-bertrand-pelissanne.jpeg);
+}
+#parc {
+    background: url(../images/parc-maureau-pelissanne.jpeg);
+}
+#chateau {
+    background: url(../images/chateau_labarben.jpeg);
+}
+#tourisme li {
+    margin: 65px 100px 0 100px;
+    height: 330px;
+    width: 55%;
+    max-width: 550px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+
+#tourisme p {
+    height: 45px;
+    width: 235px;
+    background-color: #01df74;
+    float: right;
+    margin: 50px -180px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
+}
+
+#tourisme #moulin, #tourisme #chateau {
+    float: right;
+}
+
+#chateau p, #moulin p {
+    float: left;
+    background-color: cyan;
+    margin-left: -180px;
+    box-shadow: -4px 4px 0 1px rgba(15, 154, 156, 1);
+}
+
+/* *************************** FOOTER ************************** */
+footer {
+    background-color: #524A3A;
+    color: #FFFAE1;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 900px;
+
+}
+
+input, textarea, button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 1px;
+    font-size: 1.2em;
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    font-size: 1.5em;
+    background-color: #FFFAE1;
+}
+
+button:hover {
+    background-color: #E55039;
+    color: #FFFAE1;
+    cursor: pointer; /*change le pointeur de la souris en mouseover*/
+    transition: 0.3s ease-in-out;
+}
+
+#deuxiemeTrait {
+    height: 1px;
+    width: 75%;
+    background-color: #FFFAE1;
+    margin: 60px auto;
+}
+
+#copyrightEtIcons {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+
+#copyright {
+    width: 50%;
+    text-align: left;
+    color: #FFFAE1;
+}
+
+#icons {
+    width: 50%;
+    text-align: right;
+}
+#icons a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 1.3em;
+    color: #FFFAE1;
+}
+
+#icons a:hover {
+    transform: scale(1.5);
+    transition: 0.1s;
+}
